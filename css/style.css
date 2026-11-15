@@ -1,0 +1,2148 @@
+/* general */
+
+body {
+    margin: 0;
+    font-family: "Cormorant Garamond", serif;
+}
+
+/* nav */
+.navbar {
+    background-color:  #edf0df;
+    min-height: 60px;
+    padding: 0 30px;
+}
+
+.navbar-brand img {
+    width: 330px;
+    height: auto;
+}
+
+.navbar-nav {
+    gap: 28px;
+}
+
+.nav-link {
+    color: #536f2e;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: #b83d4d;
+}
+
+.nav-link.active {
+    color: #b83d4d;
+}
+
+/* HS */
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 415px;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 80px;
+    left: 8%;
+}
+
+.hero-content h1 {
+    color: #536f2e;
+    font-size: 52px;
+    margin-bottom: 5px;
+}
+
+.hero-content h2 {
+    color: #a52e3d;
+    font-size: 40px;
+    font-style: italic;
+    margin-bottom: 55px;
+}
+
+.explore-btn {
+    background-color: #c94f61;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 8px 28px;
+    border-radius: 8px;
+}
+
+.explore-btn:hover {
+    background-color: #a83d4e;
+    color: white;
+}
+
+/* FF */
+
+.featured {
+    background-color: #edf0df;
+    padding: 12px 0 60px;
+}
+
+.featured > h1 {
+    text-align: center;
+    color: #536f2e;
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.flower-card {
+    background-color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.flower-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.flower-card h2 {
+    color: #536f2e;
+    font-size: 28px;
+    margin: 7px 0;
+}
+
+
+/* footer */
+
+footer {
+    background-color:#edf0df;
+    color: #536f2e;
+}
+
+.footer-content {
+    min-height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+}
+
+.footer-slogan {
+    color: #a52e3d;
+    font-size: 34px;
+}
+
+.social {
+    text-align: center;
+}
+
+.social h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 38px;
+}
+
+.copyright {
+    text-align: center;
+    padding: 8px;
+    font-size: 20px;
+    border-top: 1px solid #d8d8c8;
+}
+
+
+/* responsive */
+
+@media (max-width: 991px) {
+
+    .navbar-brand img {
+        width: 220px;
+    }
+
+    .navbar-nav {
+        gap: 5px;
+        text-align: center;
+    }
+
+    .hero-content {
+        left: 5%;
+        top: 60px;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-content h2 {
+        font-size: 32px;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .navbar {
+        padding: 5px 15px;
+    }
+
+    .navbar-brand img {
+        width: 180px;
+    }
+
+    .hero {
+        height: 350px;
+    }
+
+    .hero-content {
+        top: 40px;
+        left: 5%;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-content h2 {
+        font-size: 25px;
+        margin-bottom: 35px;
+    }
+
+    .featured > h1 {
+        font-size: 38px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .footer-slogan {
+        font-size: 27px;
+    }
+}
+
+/* flowers */
+
+
+.flower-header {
+    background-color: #FCE8EF;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.flower-header h1 {
+    color:  #536f2e;
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.flower-header p {
+    color: #536f2e;
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+.flower-list {
+    background-color: #FFF9F5;
+    padding: 60px 8%;
+}
+
+
+.flower-card {
+    background-color: #FFFFFF;
+    text-align: center;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 0 3px 10px rgba(41, 67, 47, 0.10);
+    transition: 0.3s;
+}
+
+.flower-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(41, 67, 47, 0.18);
+}
+
+
+.flower-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+
+.flower-card h2 {
+    color:  #536f2e;
+    font-size: 28px;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+
+.flower-card p {
+    color: #71856A;
+    font-size: 17px;
+    line-height: 1.5;
+    padding: 0 18px;
+    min-height: 75px;
+}
+
+
+.flower-btn {
+    display: inline-block;
+    background-color: #D96F7D;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 8px 22px;
+    border-radius: 6px;
+    font-size: 17px;
+    margin: 10px 0 22px;
+    transition: 0.3s;
+}
+
+.flower-btn:hover {
+    background-color: #29432F;
+    color: #FFFFFF;
+}
+
+/* flower responsive */
+
+@media (max-width: 991px) {
+
+    .flower-header h1 {
+        font-size: 40px;
+    }
+
+    .flower-header p {
+        font-size: 18px;
+    }
+
+    .flower-card img {
+        height: 200px;
+    }
+
+    .flower-card h2 {
+        font-size: 25px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .flower-header {
+        padding: 40px 15px;
+    }
+    .flower-header h1 {
+        font-size: 34px;
+    }
+    .flower-header p {
+        font-size: 16px;
+    }
+    .flower-list {
+        padding: 40px 20px;
+    }
+    .flower-card img {
+        height: 220px;
+    }
+    .flower-card h2 {
+        font-size: 24px;
+    }
+    .flower-card p {
+        font-size: 16px;
+    }
+}  
+
+
+
+/* Flower-details */
+/* GENERAL */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #FFF9F5;
+    color: #29432F;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+}
+
+h1, h2, h3, p {
+    margin-top: 0;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 42px;
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.section-space {
+    padding: 80px 0;
+}
+
+.eyebrow {
+    color: #D96F7D;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading h2 {
+    margin-bottom: 12px;
+}
+
+.section-intro {
+    max-width: 550px;
+    margin: 0 auto;
+    color: #71856A;
+}
+
+
+/* HERO */
+.rose-hero {
+    background-color: #FCE8EF;
+    padding: 65px 0;
+}
+
+.hero-text {
+    padding: 20px 40px;
+}
+
+.hero-text h1 {
+    font-size: 76px;
+    margin-bottom: 0;
+    color: #29432F;
+}
+
+.scientific-name {
+    font-size: 22px;
+    font-style: italic;
+    color: #71856A;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    max-width: 420px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.hero-image {
+    height: 430px;
+    object-position: center;
+}
+
+.main-btn {
+    display: inline-block;
+    background-color: #D96F7D;
+    color: white;
+    text-decoration: none;
+    padding: 11px 25px;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    background-color: #29432F;
+    color: white;
+}
+
+
+/* ABOUT */
+.about-section {
+    background-color: #FFF9F5;
+}
+
+.section-image {
+    height: 350px;
+}
+
+.about-text {
+    padding: 30px 50px;
+    line-height: 1.8;
+}
+
+
+/* TYPES OF ROSES */
+.types-section {
+    background-color: #EEF3E5;
+}
+
+.rose-type img {
+    height: 230px;
+    margin-bottom: 15px;
+}
+
+.rose-type h3 {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.rose-type p {
+    color: #71856A;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+
+/* CHARACTERISTICS */
+.character-section {
+    background-color: #FFF9F5;
+}
+
+.character-list {
+    padding-left: 35px;
+}
+
+.character-item {
+    padding: 15px 0;
+    border-bottom: 1px solid #E5DAD4;
+}
+
+.character-item:last-child {
+    border-bottom: none;
+}
+
+.character-item h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.character-item p {
+    color: #71856A;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+
+/* GROWING INFORMATION */
+.growing-section {
+    background-color: #EEF3E5;
+}
+
+.growing-table {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.growing-row {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 25px;
+    padding: 20px 10px;
+    border-bottom: 1px solid #D5DDCD;
+}
+
+.growing-row h3 {
+    font-size: 23px;
+    margin-bottom: 0;
+}
+
+.growing-row p {
+    color: #71856A;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+
+/* HOW TO CARE */
+.care-section {
+    background-color: #FFF9F5;
+}
+
+.care-image {
+    height: 520px;
+}
+
+.care-content {
+    padding: 20px 50px;
+}
+
+.care-content h2 {
+    margin-bottom: 15px;
+}
+
+.care-intro {
+    color: #71856A;
+    margin-bottom: 25px;
+}
+
+.care-item {
+    padding: 12px 0;
+    border-bottom: 1px solid #E5DAD4;
+}
+
+.care-item:last-child {
+    border-bottom: none;
+}
+
+.care-item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.care-item p {
+    color: #71856A;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+
+/* You May Also Like */
+.related-section {
+    background-color: #FCE8EF;
+}
+
+.related-flower img {
+    height: 260px;
+    margin-bottom: 15px;
+}
+
+.related-flower h3 {
+    font-size: 27px;
+    margin-bottom: 5px;
+}
+
+.related-flower p {
+    color: #71856A;
+    margin-bottom: 8px;
+}
+
+.related-flower a {
+    color: #D96F7D;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.related-flower a:hover {
+    color: #29432F;
+}
+
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    h2 {
+        font-size: 34px;
+    }
+
+    .section-space {
+        padding: 55px 0;
+    }
+
+    .hero-text {
+        padding: 20px 15px 35px;
+    }
+
+    .hero-text h1 {
+        font-size: 58px;
+    }
+
+    .hero-image {
+        height: 300px;
+    }
+
+    .section-image {
+        height: 280px;
+        margin-bottom: 25px;
+    }
+
+    .about-text {
+        padding: 15px;
+    }
+
+    .rose-type img {
+        height: 180px;
+    }
+
+    .character-list {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .growing-row {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .care-image {
+        height: 300px;
+    }
+
+    .care-content {
+        padding: 20px 15px;
+    }
+
+    .related-flower img {
+        height: 180px;
+    }
+}
+
+/* =========================================
+   GROWING GUIDE PAGE
+========================================= */
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.guide-hero {
+    display: flex;
+    align-items: stretch;
+    min-height: 430px;
+    background-color: #FCE8EF;
+}
+
+.guide-hero-content {
+    width: 50%;
+
+    padding: 70px 7%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.guide-small-title {
+    color:  #536f2e;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.guide-hero-content h1 {
+    color:  #536f2e;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 58px;
+    font-weight: 600;
+
+    line-height: 1.05;
+
+    margin-bottom: 20px;
+}
+
+.guide-hero-text {
+    color:  #536f2e;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    max-width: 450px;
+
+    margin: 0;
+}
+
+/* .guide-hero-image {
+    width: 50%;
+} */
+
+.guide-hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+
+/* =========================================
+   GENERAL SECTION HEADING
+========================================= */
+
+.guide-heading {
+    margin-bottom: 40px;
+}
+
+.guide-heading h2 {
+    color: #536f2e;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 42px;
+    font-weight: 600;
+
+    margin-bottom: 5px;
+}
+
+.guide-heading p {
+    color:  #536f2e;
+
+    font-size: 17px;
+
+    margin: 0;
+}
+
+
+
+/* =========================================
+   FROM SEED TO BLOOM
+========================================= */
+
+.seed-bloom {
+    background-color: #FFF9F5;
+
+    padding: 70px 8%;
+}
+
+.seed-steps {
+    position: relative;
+}
+
+.seed-step {
+    position: relative;
+
+    height: 100%;
+
+    padding: 0 10px;
+}
+
+.step-image {
+    width: 135px;
+    height: 135px;
+
+    margin-bottom: 18px;
+}
+
+.step-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+.step-number {
+    color: #D96F7D;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    letter-spacing: 1px;
+}
+
+.seed-step h3 {
+    color:  #536f2e;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 27px;
+    font-weight: 600;
+
+    margin: 5px 0 8px;
+}
+
+.seed-step p {
+    color: #536f2e;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+
+    max-width: 210px;
+
+    margin: 0;
+}
+
+
+
+/* =========================================
+   BASIC CARE
+========================================= */
+
+.basic-care-guide {
+    background-color: #EEF3E5;
+
+    padding: 70px 8%;
+}
+
+.care-image {
+    height: 440px;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+}
+
+.care-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* CARE LIST */
+
+.care-list {
+    padding-left: 10px;
+}
+
+.care-item {
+    display: flex;
+
+    gap: 18px;
+
+    margin-bottom: 28px;
+}
+
+.care-item:last-child {
+    margin-bottom: 0;
+}
+
+.care-item-icon {
+    width: 42px;
+    min-width: 42px;
+
+    font-size: 35px;
+
+    text-align: center;
+}
+
+.care-item h3 {
+    color:  #536f2e;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 30px;
+    font-weight: 600;
+
+    margin-bottom: 4px;
+}
+
+.care-item p {
+    color:  #536f2e;
+
+    font-size: 20px;
+
+    line-height: 1.5;
+
+    margin: 0;
+
+    max-width: 480px;
+}
+
+
+
+/* =========================================
+   BEGINNER TIPS
+========================================= */
+
+.beginner-section {
+    background-color: #FFF9F5;
+
+    padding: 70px 8%;
+}
+
+.beginner-box {
+    display: flex;
+    align-items: center;
+
+    background-color: #FCE8EF;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    max-width: 1050px;
+
+    margin: 0 auto;
+}
+
+.beginner-image {
+    width: 42%;
+    height: 300px;
+}
+
+.beginner-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.beginner-content {
+    width: 58%;
+
+    padding: 35px 45px;
+}
+
+.beginner-label {
+    color: #536f2e;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+.beginner-content h2 {
+    color: #536f2e;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 38px;
+    font-weight: 600;
+
+    margin-bottom: 15px;
+}
+
+.beginner-content ul {
+    padding-left: 20px;
+
+    margin: 0;
+}
+
+.beginner-content li {
+    color:  #536f2e;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+    .guide-hero-content h1 {
+        font-size: 48px;
+    }
+
+    .guide-hero-content {
+        padding: 55px 6%;
+    }
+
+    .guide-heading h2 {
+        font-size: 38px;
+    }
+
+    .step-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .care-image {
+        height: 380px;
+    }
+
+    .beginner-content {
+        padding: 30px;
+    }
+
+    .beginner-content h2 {
+        font-size: 34px;
+    }
+
+}
+
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+    /* HERO */
+
+    .guide-hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .guide-hero-content {
+        width: 100%;
+
+        padding: 45px 25px;
+    }
+
+    .guide-hero-content h1 {
+        font-size: 42px;
+    }
+
+    .guide-hero-text {
+        font-size: 16px;
+    }
+
+    .guide-hero-image {
+        width: 100%;
+
+        height: 300px;
+    }
+
+
+    /* SEED TO BLOOM */
+
+    .seed-bloom {
+        padding: 55px 20px;
+    }
+
+    .guide-heading h2 {
+        font-size: 35px;
+    }
+
+    .guide-heading p {
+        font-size: 16px;
+    }
+
+    .seed-step {
+        margin-bottom: 35px;
+    }
+
+    .step-image {
+        width: 130px;
+        height: 130px;
+    }
+
+
+    /* BASIC CARE */
+
+    .basic-care-guide {
+        padding: 55px 20px;
+    }
+
+    .care-image {
+        height: 300px;
+    }
+
+    .care-list {
+        padding-left: 0;
+    }
+
+    .care-item {
+        margin-bottom: 25px;
+    }
+
+
+    /* BEGINNER */
+
+    .beginner-section {
+        padding: 55px 20px;
+    }
+
+    .beginner-box {
+        display: block;
+    }
+
+    .beginner-image {
+        width: 100%;
+        height: 250px;
+    }
+
+    .beginner-content {
+        width: 100%;
+
+        padding: 30px 25px;
+    }
+
+    .beginner-content h2 {
+        font-size: 32px;
+    }
+
+}
+
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 576px) {
+
+    .guide-hero-content h1 {
+        font-size: 38px;
+    }
+
+    .guide-hero-image {
+        height: 250px;
+    }
+
+    .guide-heading h2 {
+        font-size: 32px;
+    }
+
+    .seed-step h3 {
+        font-size: 25px;
+    }
+
+    .care-image {
+        height: 260px;
+    }
+
+}
+
+/* Contact Page */
+
+/* Contact Header */
+.contact-header {
+    background-color: #FCE8EF;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.contact-header h1 {
+    color: #536f2e;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.contact-header p {
+    color: #536f2e;
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* Contact Section */
+.contact-section {
+    background-color: #FFF9F5;
+    padding: 70px 8%;
+}
+
+
+/* Contact Information */
+.contact-info {
+    background-color: #EEF3E5;
+    padding: 40px;
+    border-radius: 12px;
+    height: 100%;
+}
+
+.contact-info h2 {
+    color: #536f2e;
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+
+/* Contact Item */
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    margin-bottom: 28px;
+}
+
+.contact-icon {
+    font-size: 28px;
+    width: 40px;
+    text-align: center;
+}
+
+.contact-item h3 {
+    color: #536f2e;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.contact-item p {
+    color: #536f2e;
+    font-size: 17px;
+    margin: 0;
+}
+
+
+/* Social Media */
+.contact-social {
+    margin-top: 35px;
+}
+
+.contact-social h3 {
+    color: #29432F;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+.social-icons img:hover {
+    transform: translateY(-4px);
+}
+
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+.contact-form {
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(41, 67, 47, 0.10);
+    height: 100%;
+}
+
+.contact-form h2 {
+    color: #29432F;
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+
+/* Form Labels */
+.form-label {
+    color: #29432F;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+
+/* Form Inputs */
+.form-control {
+    border: 1px solid #D8DED2;
+    border-radius: 6px;
+    padding: 11px 14px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 17px;
+    color: #29432F;
+    background-color: #FFF9F5;
+}
+
+.form-control::placeholder {
+    color: #A0A89B;
+}
+
+
+/* When user clicks input */
+.form-control:focus {
+    border-color: #71856A;
+    box-shadow: 0 0 0 0.15rem rgba(113, 133, 106, 0.20);
+}
+
+
+/* Message Box */
+textarea.form-control {
+    resize: vertical;
+}
+
+
+/* Send Button */
+.contact-btn {
+    background-color: #D96F7D;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 6px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #29432F;
+    color: #FFFFFF;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 991px) {
+
+    .contact-header h1 {
+        font-size: 42px;
+    }
+
+    .contact-header p {
+        font-size: 18px;
+    }
+
+    .contact-info h2,
+    .contact-form h2 {
+        font-size: 30px;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 30px;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .contact-header {
+        padding: 40px 15px;
+    }
+
+    .contact-header h1 {
+        font-size: 34px;
+    }
+
+    .contact-header p {
+        font-size: 16px;
+    }
+
+    .contact-section {
+        padding: 45px 20px;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 25px 20px;
+    }
+
+    .contact-info h2,
+    .contact-form h2 {
+        font-size: 28px;
+    }
+
+    .contact-item h3 {
+        font-size: 20px;
+    }
+
+    .contact-item p {
+        font-size: 16px;
+    }
+
+    .form-label {
+        font-size: 17px;
+    }
+
+    .contact-btn {
+        width: 100%;
+    }
+}
+
+
+/* =========================
+   TYPES AND SEASONS PAGE
+========================= */
+
+
+/* PAGE HEADER */
+
+.types-header {
+    background-color: #FCE8EF;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.types-header h1 {
+    color: #29432F;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.types-header p {
+    color: #71856A;
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+/* SECTION TITLE */
+
+.types-section-title {
+    text-align: center;
+    color: #29432F;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.types-section-description {
+    text-align: center;
+    color: #71856A;
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+
+/* =========================
+   FLOWER TYPES
+========================= */
+
+.flower-types {
+    background-color: #FFF9F5;
+    padding: 60px 8%;
+}
+
+.type-card {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 30px 22px;
+    height: 100%;
+    border-radius: 12px;
+
+    box-shadow: 0 3px 10px rgba(41, 67, 47, 0.10);
+
+    transition: 0.3s;
+}
+
+.type-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 8px 18px rgba(41, 67, 47, 0.18);
+}
+
+.type-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.type-card h3 {
+    color: #29432F;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.type-card p {
+    color: #71856A;
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+.type-example {
+    color: #D96F7D;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   BLOOMING SEASONS
+========================= */
+
+.bloom-seasons {
+    background-color: #EEF3E5;
+    padding: 60px 8%;
+}
+
+.season-card {
+    background-color: #FFFFFF;
+
+    display: flex;
+    align-items: center;
+
+    padding: 30px;
+
+    height: 100%;
+
+    border-radius: 12px;
+
+    box-shadow: 0 3px 10px rgba(41, 67, 47, 0.08);
+
+    transition: 0.3s;
+}
+
+.season-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 8px 18px rgba(41, 67, 47, 0.15);
+}
+
+.season-icon {
+    font-size: 48px;
+
+    min-width: 75px;
+
+    text-align: center;
+
+    margin-right: 20px;
+}
+
+.season-content h3 {
+    color: #29432F;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.season-content p {
+    color: #71856A;
+    font-size: 17px;
+    line-height: 1.5;
+
+    margin-bottom: 10px;
+}
+
+.season-content span {
+    color: #D96F7D;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   SEASONAL TIP
+========================= */
+
+.season-tip {
+    background-color: #FFF9F5;
+    padding: 60px 8%;
+}
+
+.tip-box {
+    background-color: #FCE8EF;
+
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    padding: 35px 45px;
+
+    border-radius: 12px;
+
+    text-align: center;
+}
+
+.tip-box h2 {
+    color: #29432F;
+    font-size: 32px;
+    font-weight: 600;
+
+    margin-bottom: 12px;
+}
+
+.tip-box p {
+    color: #71856A;
+    font-size: 18px;
+    line-height: 1.6;
+
+    margin: 0;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 991px) {
+
+    .types-header h1 {
+        font-size: 42px;
+    }
+
+    .types-header p {
+        font-size: 18px;
+    }
+
+    .types-section-title {
+        font-size: 36px;
+    }
+
+    .type-card h3 {
+        font-size: 24px;
+    }
+
+    .season-content h3 {
+        font-size: 27px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 576px) {
+
+    .types-header {
+        padding: 40px 15px;
+    }
+
+    .types-header h1 {
+        font-size: 34px;
+    }
+
+    .types-header p {
+        font-size: 16px;
+    }
+
+
+    .flower-types,
+    .bloom-seasons,
+    .season-tip {
+        padding: 45px 20px;
+    }
+
+
+    .types-section-title {
+        font-size: 32px;
+    }
+
+    .types-section-description {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+
+    .type-card {
+        padding: 25px 18px;
+    }
+
+    .type-card h3 {
+        font-size: 23px;
+    }
+
+    .type-card p {
+        font-size: 16px;
+    }
+
+
+    .season-card {
+        display: block;
+        text-align: center;
+        padding: 25px 20px;
+    }
+
+    .season-icon {
+        margin: 0 auto 12px;
+    }
+
+    .season-content h3 {
+        font-size: 26px;
+    }
+
+    .season-content p {
+        font-size: 16px;
+    }
+
+
+    .tip-box {
+        padding: 25px 20px;
+    }
+
+    .tip-box h2 {
+        font-size: 28px;
+    }
+
+    .tip-box p {
+        font-size: 16px;
+    }
+
+}
+
+
+/* season page */
+
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF9F5;
+    color: #29432F;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+}
+
+p {
+    line-height: 1.7;
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.section-label {
+    color: #71856A;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+
+/* HERO SECTION */
+.season-hero {
+    background-color: #FCE8EF;
+    padding: 75px 0;
+}
+
+.hero-text {
+    padding-right: 50px;
+}
+
+.hero-text h1 {
+    font-size: 65px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero-text h1 span {
+    color: #D96F7D;
+    font-style: italic;
+}
+
+.hero-text p:not(.section-label) {
+    max-width: 450px;
+    margin-bottom: 30px;
+}
+
+.hero-image {
+    height: 430px;
+}
+
+.season-btn {
+    display: inline-block;
+    background-color: #D96F7D;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.season-btn:hover {
+    background-color: #29432F;
+    color: white;
+}
+
+
+/* SECTION HEADINGS */
+.section-heading {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 65px;
+}
+
+.section-heading h2 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.section-heading p {
+    color: #667365;
+}
+
+
+/* FLOWER TYPES */
+.flower-types {
+    padding: 100px 0;
+    background-color: #FFF9F5;
+}
+
+.type-row {
+    margin-bottom: 75px;
+}
+
+.type-row:last-child {
+    margin-bottom: 0;
+}
+
+.type-image {
+    height: 320px;
+}
+
+.type-content {
+    padding: 30px 55px;
+}
+
+.type-number {
+    display: block;
+    color: #D96F7D;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.type-content h3 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.type-content p {
+    color: #667365;
+}
+
+.type-content .examples {
+    color: #29432F;
+    margin-top: 20px;
+}
+
+
+/* FLOWERING SEASONS */
+.flower-seasons {
+    background-color: #EEF3E5;
+    padding: 100px 0;
+}
+
+.season-row {
+    margin-bottom: 80px;
+}
+
+.season-row:last-of-type {
+    margin-bottom: 40px;
+}
+
+.season-image {
+    height: 350px;
+}
+
+.season-content {
+    padding: 35px 55px;
+}
+
+.season-name {
+    display: inline-block;
+    color: #D96F7D;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.season-content h3 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.season-content p {
+    color: #667365;
+}
+
+.season-content strong {
+    color: #29432F;
+}
+
+.climate-note {
+    text-align: center;
+    font-size: 15px;
+    color: #667365;
+    border-top: 1px solid #CAD5C1;
+    padding-top: 20px;
+}
+
+
+/* FLOWERING FACTORS */
+.flowering-factors {
+    padding: 100px 0;
+    background-color: #FFF9F5;
+}
+
+.factors-image {
+    height: 550px;
+}
+
+.factors-content {
+    padding: 20px 55px;
+}
+
+.factors-content h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.factors-content > p {
+    color: #667365;
+    margin-bottom: 25px;
+}
+
+.factor-item {
+    border-bottom: 1px solid #D8D8CE;
+    padding: 15px 0;
+}
+
+.factor-item h4 {
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+
+.factor-item p {
+    color: #667365;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+
+/* FLOWERING CALENDAR */
+.flower-calendar {
+    background-color: #FCE8EF;
+    padding: 100px 0;
+}
+
+.calendar-table {
+    background-color: #FFF9F5;
+    color: #29432F;
+    border-color: #E8D5D8;
+    margin-bottom: 20px;
+}
+
+.calendar-table th {
+    background-color: #29432F;
+    color: white;
+    font-weight: 600;
+    padding: 18px;
+}
+
+.calendar-table td {
+    padding: 18px;
+    vertical-align: middle;
+}
+
+.calendar-table tbody tr:hover {
+    background-color: #EEF3E5;
+}
+
+.calendar-note {
+    text-align: center;
+    color: #667365;
+    font-size: 15px;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .season-hero,
+    .flower-types,
+    .flower-seasons,
+    .flowering-factors,
+    .flower-calendar {
+        padding: 60px 0;
+    }
+
+    .hero-text {
+        padding: 0 15px 35px;
+    }
+
+    .hero-text h1 {
+        font-size: 48px;
+    }
+
+    .hero-image {
+        height: 300px;
+    }
+
+    .section-heading {
+        margin-bottom: 40px;
+    }
+
+    .section-heading h2 {
+        font-size: 35px;
+    }
+
+    .type-row,
+    .season-row {
+        margin-bottom: 50px;
+    }
+
+    .type-image,
+    .season-image {
+        height: 260px;
+    }
+
+    .type-content,
+    .season-content {
+        padding: 25px 15px;
+    }
+
+    .type-content h3,
+    .season-content h3 {
+        font-size: 30px;
+    }
+
+    .factors-image {
+        height: 300px;
+        margin-bottom: 30px;
+    }
+
+    .factors-content {
+        padding: 0 15px;
+    }
+
+    .factors-content h2 {
+        font-size: 34px;
+    }
+
+    .calendar-table {
+        font-size: 15px;
+    }
+
+    .calendar-table th,
+    .calendar-table td {
+        padding: 12px;
+    }
+}
